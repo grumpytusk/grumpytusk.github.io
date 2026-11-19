@@ -103,7 +103,8 @@
     transition: transform .15s, box-shadow .15s;
   }
   .feature:hover { transform: translateY(-2px); box-shadow: 0 6px 0 var(--graphite); }
-  .feature img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; border-bottom: 2.5px solid var(--graphite); }
+  .feature.soon:hover { transform: none; box-shadow: 0 4px 0 var(--graphite); }
+  .feature img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; display: block; border-bottom: 2.5px solid var(--graphite); }
   .feature .txt { padding: 9px 11px 11px; }
   .feature b { display: block; font-size: 15px; font-weight: 900; }
   .feature small { font-size: 12px; font-weight: 700; color: var(--fur); }
@@ -166,8 +167,24 @@
 
   <h2>Latest critters</h2>
   <section class="features">
+    <a class="feature" href="https://cults3d.com/en/users/GrumpyTusk/3d-models" target="_blank" rel="noopener">
+      <img src="gus.jpg" alt="Gus the French bulldog, 3D printed figurine" width="600" height="600">
+      <div class="txt">
+        <b>Gus</b>
+        <small>Professional lap invader.</small><br>
+        <span class="badge">New</span>
+      </div>
+    </a>
+    <div class="feature soon">
+      <img src="spike.jpg" alt="Spike the grumpy hedgehog, 3D model render" width="600" height="600" loading="lazy">
+      <div class="txt">
+        <b>Spike</b>
+        <small>Old, spiky, done with everyone.</small><br>
+        <span class="badge soon">Coming soon</span>
+      </div>
+    </div>
     <a class="feature" href="https://cults3d.com/en/3d-model/art/buddy-the-labrador-puppy-dog-figurine-stylized-stl-for-3d-printing" target="_blank" rel="noopener">
-      <img src="buddy.jpg" alt="Buddy the labrador puppy, 3D printed figurine">
+      <img src="buddy.jpg" alt="Buddy the labrador puppy, 3D printed figurine" width="480" height="480" loading="lazy">
       <div class="txt">
         <b>Buddy</b>
         <small>Way too happy. Tusk hates him.</small><br>
@@ -175,7 +192,7 @@
       </div>
     </a>
     <a class="feature" href="https://makerworld.com/en/models/3511548" target="_blank" rel="noopener">
-      <img src="mango.jpg" alt="Mango the orangutan, 3D printable figurine">
+      <img src="mango.jpg" alt="Mango the orangutan, 3D printable figurine" width="480" height="480" loading="lazy">
       <div class="txt">
         <b>Mango</b>
         <small>Nothing surprises him.</small><br>
