@@ -92,7 +92,18 @@
     margin: 26px 4px 10px;
   }
 
+  h2 span {
+    font-size: 12px; font-weight: 700; text-transform: none;
+    letter-spacing: 0; margin-left: 6px; opacity: .85;
+  }
+  h2.coll { color: var(--graphite); }
+
   .features { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .feature:only-child { grid-column: 1 / -1; display: flex; align-items: stretch; }
+  .feature:only-child img { width: 42%; border-bottom: 0; border-right: 2.5px solid var(--graphite); }
+  .feature:only-child .txt { align-self: center; padding: 12px 14px; }
+  .feature:only-child b { font-size: 17px; }
+  .feature:only-child small { font-size: 13px; }
   .feature {
     background: var(--card);
     border: 2.5px solid var(--graphite);
@@ -165,7 +176,7 @@
     <a href="https://x.com/grumpytusk" aria-label="X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
   </nav>
 
-  <h2>Latest critters</h2>
+  <h2>Snoot Squad <span>happy pets, boopable snoots</span></h2>
   <section class="features">
     <a class="feature" href="https://cults3d.com/en/users/GrumpyTusk/3d-models" target="_blank" rel="noopener">
       <img src="gus.jpg" alt="Gus the French bulldog, 3D printed figurine" width="600" height="600">
@@ -173,6 +184,26 @@
         <b>Gus</b>
         <small>Professional lap invader.</small><br>
         <span class="badge">New</span>
+      </div>
+    </a>
+    <a class="feature" href="https://cults3d.com/en/3d-model/art/buddy-the-labrador-puppy-dog-figurine-stylized-stl-for-3d-printing" target="_blank" rel="noopener">
+      <img src="buddy.jpg" alt="Buddy the labrador puppy, 3D printed figurine" width="480" height="480" loading="lazy">
+      <div class="txt">
+        <b>Buddy</b>
+        <small>Way too happy. Tusk hates him.</small><br>
+        <span class="badge">Out now</span>
+      </div>
+    </a>
+  </section>
+
+  <h2>Grumpy Forest <span>grumpy woodland critters</span></h2>
+  <section class="features">
+    <a class="feature" href="https://cults3d.com/en/users/GrumpyTusk/3d-models" target="_blank" rel="noopener">
+      <img src="tusk.jpg" alt="Tusk the grumpy boar, 3D printed figurine" width="600" height="600" loading="lazy">
+      <div class="txt">
+        <b>Tusk</b>
+        <small>Big tusks. Bigger attitude.</small><br>
+        <span class="badge">Out now</span>
       </div>
     </a>
     <div class="feature soon">
@@ -183,14 +214,10 @@
         <span class="badge soon">Coming soon</span>
       </div>
     </div>
-    <a class="feature" href="https://cults3d.com/en/3d-model/art/buddy-the-labrador-puppy-dog-figurine-stylized-stl-for-3d-printing" target="_blank" rel="noopener">
-      <img src="buddy.jpg" alt="Buddy the labrador puppy, 3D printed figurine" width="480" height="480" loading="lazy">
-      <div class="txt">
-        <b>Buddy</b>
-        <small>Way too happy. Tusk hates him.</small><br>
-        <span class="badge">Out now</span>
-      </div>
-    </a>
+  </section>
+
+  <h2>Solo critters <span>one of a kind</span></h2>
+  <section class="features">
     <a class="feature" href="https://makerworld.com/en/models/3511548" target="_blank" rel="noopener">
       <img src="mango.jpg" alt="Mango the orangutan, 3D printable figurine" width="480" height="480" loading="lazy">
       <div class="txt">
